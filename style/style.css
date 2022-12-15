@@ -1,0 +1,138 @@
+:root {
+    --header-color: #6595BF;
+    --font-color: #F1AC27;
+    --disc-color: #D9D9DC;
+    --footer-color: #233A59;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 110px;
+    gap: 400px;
+    background-color: var(--header-color);
+    color: var(--font-color);
+}
+
+header h2 {
+    display: inline;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline;
+
+}
+
+a {
+    text-decoration: none;
+    padding: 30px;
+    color: var(--font-color);
+    font-size: 18px;
+}
+
+.disc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--disc-color);
+    height: max-content;
+
+}
+
+.disc img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: 40px 0;
+}
+
+.disc p {
+    text-align: center;
+    line-height: 35px;
+    padding: 0 400px;
+    margin-bottom: 40px;
+}
+
+.disc p span {
+    color: var(--font-color);
+}
+
+.disc h2 {
+    margin-bottom: 20px;
+    color: #6595BF;
+}
+
+.gallary {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.gallary img {
+    width: 280px;
+    height: 300px;
+    margin: 20px;
+}
+
+footer {
+    color: var(--font-color);
+    background-color: var(--footer-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 160px;
+    line-height: 30px;
+}
+
+.about {
+    width: 300px;
+}
+
+.social a {
+    margin-left: -30px;
+
+}
+
+.about p,
+.social a,
+.bunker span {
+    color: var(--disc-color);
+}
+
+footer .bunker h4,
+footer .social h4,
+footer .about h4 {
+    margin-left: -6px;
+}
+
+/* the events */
+header ul li a:hover {
+
+    font-size: 20px;
+    color: var(--disc-color);
+}
+
+footer a:hover {
+    color: var(--font-color);
+}
+
+header a {
+    transition: 0.25s all ease-in-out;
+}
